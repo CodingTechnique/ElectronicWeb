@@ -1,0 +1,62 @@
+.contact-section {
+  padding: 20px;
+  background-color: #f9f9f9;
+  text-align: center;
+  border-radius: 8px;
+}
+
+.contact-section h2 {
+  margin-bottom: 10px;
+  color: #007BFF;
+}
+
+.contact-section p {
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.phone-number {
+  font-size: 1.2em;
+  font-weight: bold;
+  color: #0e100f; /* Changed to a positive green color */
+}
+
+.phone-number span {
+  color: #111314; /* Highlight color for the phone number (teal) */
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+form input,
+form textarea {
+  width: 100%;
+  max-width: 400px;
+  margin-bottom: 10px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1em; /* Adjust font size to be more readable */
+}
+
+form input::placeholder,
+form textarea::placeholder {
+  font-size: 0.9em; /* Adjust the placeholder text size */
+  color: #aaa; /* Light color for placeholder text */
+}
+
+form button {
+  padding: 10px 20px;
+  background-color: #007BFF;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+form button:hover {
+  background-color: #0056b3;
+}

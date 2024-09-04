@@ -1,0 +1,60 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.8rem 1.5rem; /* Increased padding for a more spacious look */
+  background-color: #007BFF; /* Keeping the blue background */
+  color: #fff;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin: 0px; 
+  /* Subtle shadow for depth */
+}
+
+.navbar-logo a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.8rem; /* Slightly larger for emphasis */
+  font-weight: bold; /* Bold for better visibility */
+  transition: color 0.3s ease; /* Smooth transition on hover */
+  
+}
+
+.navbar-logo a:hover {
+  color: #FFD700; /* Gold color on hover */
+}
+
+.navbar-links {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem; /* Increased gap for better spacing */
+}
+
+.navbar-links li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.1rem; /* Slightly larger font for better readability */
+  transition: color 0.3s ease; /* Smooth transition on hover */
+}
+
+.navbar-links li a:hover {
+  color: #FFD700; /* Gold color on hover */
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    padding: 1rem; /* Adjusted padding for smaller screens */
+  }
+
+  .navbar-links {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.8rem; /* Slightly larger gap for touch screens */
+  }
+
+  .navbar-links li a {
+    font-size: 1.2rem; /* Larger font size for easier touch interaction */
+  }
+}

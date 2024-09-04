@@ -1,0 +1,95 @@
+/* BookingForm.css */
+
+/* Base styles for the form */
+.booking-form {
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+}
+
+/* General styling for input, select, and button elements */
+.booking-form input,
+.booking-form button {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+/* Specific styling for select element */
+.booking-form select {
+  width: 80%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-sizing: border-box;
+  background-color: #e9f2ff; /* Light background for better visibility */
+  -webkit-appearance: none; /* Remove default styling on webkit browsers */
+  -moz-appearance: none; /* Remove default styling on Firefox */
+  appearance: none; /* Remove default styling */
+}
+
+/* Styling for select element's container to improve appearance */
+.booking-form select:focus {
+  border-color: #007bff;
+  outline: none;
+  background-color: #e3f2ff; /* Slightly different background on focus */
+}
+
+/* Styling for the button */
+.booking-form button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.booking-form button:hover {
+  background-color: #0056b3;
+}
+
+/* Responsive design */
+@media (max-width: 600px) {
+  .booking-form {
+    padding: 15px;
+  }
+
+  .booking-form input,
+  
+  .booking-form button {
+    padding: 8px;
+    margin-bottom: 10px;
+  }
+
+  /* Specific styling for select element in small screens */
+  .booking-form select {
+    padding: 8px;
+  }
+}
+
+@media (max-width: 400px) {
+  .booking-form {
+    padding: 10px;
+  }
+
+  .booking-form input,
+  
+  .booking-form button {
+    padding: 6px;
+    margin-bottom: 8px;
+  }
+
+  /* Specific styling for select element in extra small screens */
+  .booking-form select {
+    padding: 6px;
+  }
+}

@@ -1,0 +1,66 @@
+.service-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 20px;
+  margin-bottom: 100px; /* Ensure space at the bottom for the footer */
+}
+
+.service-card {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  padding: 12px; /* Reduced padding */
+  text-align: center;
+  background-color: #fff;
+  max-width: 280px; /* Set a max-width to make the card smaller */
+  margin: 10px; /* Adjust the margin for better spacing */
+  box-sizing: border-box; /* Ensure padding and border are included in width */
+  transition: transform 0.3s ease-in-out;
+}
+
+.service-card-image {
+  width: 100%;
+  height: auto;
+  border-radius: 4px;
+  margin-bottom: 12px; /* Reduced margin */
+}
+
+.service-card h2 {
+  font-size: 1.25rem; /* Reduced font size */
+  margin: 12px 0 6px; /* Adjusted margins */
+}
+
+.service-card p {
+  font-size: 0.9rem; /* Reduced font size */
+  color: #666;
+}
+
+.service-card button {
+  background-color: #007BFF;
+  border: none;
+  color: #fff;
+  padding: 8px 16px; /* Reduced padding */
+  font-size: 0.9rem; /* Reduced font size */
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.service-card button:hover {
+  background-color: #0056b3;
+}
+
+/* Media query for tablets and mobile devices */
+@media (max-width: 768px) {
+  .service-card {
+    width: calc(50% - 20px); /* Two cards per row */
+    margin: 10px; /* Adjust margin to fit within container */
+  }
+}
+
+@media (max-width: 480px) {
+  .service-card {
+    width: calc(50% - 20px); /* Two cards per row, ensure they fit side-by-side */
+    margin: 10px; /* Adjust margin to fit within container */
+  }
+}

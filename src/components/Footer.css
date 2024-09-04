@@ -1,0 +1,144 @@
+.footer {
+  background: #007BFF;
+  color: #fff;
+  text-align: center;
+  padding: 1rem 0;
+  position: sticky;
+  width: 100%;
+  box-sizing: border-box;
+  border-top: 1px solid #0056b3;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  margin-bottom:0px ;
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer-phone-number {
+  color: #171718;
+  margin-top: 0.5rem;
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  text-align: right;
+  font-weight: bolder;
+}
+
+.footer-phone-number a {
+  color: #1f1f20;
+  text-decoration: none;
+  font-weight: bolder;
+}
+
+.footer-phone-number a:hover {
+  text-decoration: underline;
+}
+
+.admin-dashboard-link {
+  position: absolute;
+  left: 20px; /* Positioned on the left side */
+  top: 50%;
+  transform: translateY(-50%);
+  font-weight: bold;
+}
+
+.admin-dashboard-link a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.admin-dashboard-link a:hover {
+  text-decoration: underline;
+}
+
+.footer p {
+  margin: 0;
+  font-size: 1rem;
+}
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 0.5rem;
+}
+
+.social-links a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.5rem;
+}
+
+.social-icon {
+  width: 40px;
+  height: 40px;
+}
+
+@media (max-width: 768px) {
+  .footer p {
+    font-size: 0.9rem;
+  }
+
+  .social-links {
+    gap: 0.5rem;
+  }
+
+  .social-links a {
+    font-size: 1.2rem;
+  }
+
+  .social-icon {
+    width: 30px;
+    height: 30px;
+  }
+
+  .footer-phone-number {
+    font-size: 0.8rem;
+    right: 10px;
+  }
+
+  .admin-dashboard-link {
+    font-size: 0.8rem;
+    left: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .footer {
+    padding: 0.5rem 0;
+  }
+
+  .footer p {
+    font-size: 0.8rem;
+  }
+
+  .social-links a {
+    font-size: 1rem;
+  }
+
+  .social-icon {
+    width: 25px;
+    height: 25px;
+  }
+
+  .footer-phone-number,
+  .admin-dashboard-link {
+    font-size: 0.7rem;
+    right: 5px;
+    left: 5px;
+  }
+}
+
+@media (min-width: 480px) {
+  .footer-phone-number {
+    display: none;
+  }
+}
